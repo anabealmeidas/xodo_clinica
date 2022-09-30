@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Página Principal | Xodó</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="canvas">
+        <div class="menu">
+            <img src="./images/logo 1.png" alt="">
+
+            <ul>
+                <li>
+                    <a href="index.html">Página Principal</a>
+                </li>
+                <li>
+                    <a href="sobre_clinica.html">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="horario.html">Atendimentos e Especialidades</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                <a href="#" class="toggle-menu">Abrir Menu</a>
+                </div>         
+                 <div class="text-1">
+                    <img src="./images/vet 1.png" alt="">
+                    <p>
+                        Agende a sua consulta veterinária, o banho e tosa com leva a traz ou tire suas duvidas sobre nossos atendimentos e medicamentos.
+                    </p>
+                </div>
+                <div class="text-2">
+                    <img src="./images/med.png" alt="">
+                    <p>
+                        Atendemos a todas as necessidades do seu animal. Além de um exame físico completo, nós também analisamos o comportamento, histórico médico, estresses emocionais e outros fatores. Confira nossas principais especialidades veterinárias. Oferecemos convênios com diversos planos de saúde animal.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <div class="col-1">
+                    <p>Informações</p>
+                    <li><a href="#">Politícas de Privacidade</a></li>
+                    <li><a href="#">Termos e Condiçoess</a></li>
+                </div>
+
+                <div class="col-2">
+                    <p>Cliníca</p>
+                    <li><a href="#">Politícas de Privacidade</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </div>
+
+                <div class="col-3">
+                    <p>Contatos</p>
+                    <li><a href="#">E-mail: xodo@xodo.com.br</a></li>
+                    <li><a href="#">Telefone: (11) 9 99999-9999</a></li>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        // elementos auxiliares
+        var toogleMenu = document.querySelectorAll('.toggle-menu'),
+        wrapper = document.querySelector('.wrapper')
+
+        // criando evento de click para abrir o menu
+        for (var i = 0; i < toogleMenu.length; i++) {
+        toogleMenu[i].addEventListener('click', menuAction)
+        }
+
+        // função auxiliar que abre e fecha o menu
+        function menuAction() {
+        if (wrapper.classList.contains('show-menu')) {
+            wrapper.classList.remove('show-menu')
+        } else {
+            wrapper.classList.add('show-menu')
+        }}
+    </script>
+</body>
+</html>
